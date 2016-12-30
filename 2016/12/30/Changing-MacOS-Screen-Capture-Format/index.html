@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: iTerm2 | Cuneyt Mertayak</title>
+  <title>Changing MacOS Screen Capture Format | Cuneyt Mertayak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cuneyt Mertayak">
-<meta property="og:url" content="http://cune.yt/tags/iTerm2/index.html">
+  <meta name="description" content="If you like taking screenshots on your macOS for different purposes, e.g. storing confirmation pages, and you’d rather JPG format (as opposed to the default PNG format) I have a good news for you: You">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Changing MacOS Screen Capture Format">
+<meta property="og:url" content="http://cune.yt/2016/12/30/Changing-MacOS-Screen-Capture-Format/index.html">
 <meta property="og:site_name" content="Cuneyt Mertayak">
+<meta property="og:description" content="If you like taking screenshots on your macOS for different purposes, e.g. storing confirmation pages, and you’d rather JPG format (as opposed to the default PNG format) I have a good news for you: You">
+<meta property="og:updated_time" content="2016-12-30T12:12:51.421Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cuneyt Mertayak">
+<meta name="twitter:title" content="Changing MacOS Screen Capture Format">
+<meta name="twitter:description" content="If you like taking screenshots on your macOS for different purposes, e.g. storing confirmation pages, and you’d rather JPG format (as opposed to the default PNG format) I have a good news for you: You">
   
     <link rel="alternate" href="/atom.xml" title="Cuneyt Mertayak" type="application/atom+xml">
   
@@ -93,39 +97,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/29/Take-the-Full-Control-of-Floaded-Screen-in-Mac-OS-Terminal/" class="archive-article-date">
-  <time datetime="2016-12-29T13:14:45.000Z" itemprop="datePublished">Dec 29</time>
+        <section id="main"><article id="post-Changing-MacOS-Screen-Capture-Format" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/30/Changing-MacOS-Screen-Capture-Format/" class="article-date">
+  <time datetime="2016-12-30T12:12:51.000Z" itemprop="datePublished">2016-12-30</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/29/Take-the-Full-Control-of-Floaded-Screen-in-Mac-OS-Terminal/">Take the Full Control of Flooded Screen in iTerm2</a>
+    <h1 class="article-title" itemprop="name">
+      Changing MacOS Screen Capture Format
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>If you like taking screenshots on your macOS for different purposes, e.g. storing confirmation pages, and you’d rather JPG format (as opposed to the default PNG format) I have a good news for you: You can easily change the format of the default macOS screen capture tool. </p>
+<p>First let’s remember: The shortcut <code>Cmd+Shift+4</code> gives you the ability to select area you’d like to take a screenshot and <code>Cmd+Shift+3</code> gives you the ability to take the screenshot of the whole screen.</p>
+<p>So, how is it possible to change the default format? You’ll need to hit to the terminal emulator for this. If you haven’t done before it is reachable from the <code>Applications &gt; Utilities</code> folder. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write com.apple.screencapture <span class="built_in">type</span> jpg</div></pre></td></tr></table></figure>
+<p>Then you’ll need to restart <code>SystemUIServer</code> service by killing it:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">killall SystemUIServer</div></pre></td></tr></table></figure>
+<p>You can change <code>jpg</code> to <code>png</code>, <code>pdf</code>, <code>gif</code> and <code>tiff</code> in the first command if you find one of the others more useful.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cune.yt/2016/12/30/Changing-MacOS-Screen-Capture-Format/" data-id="cixbrfqpj00035wb9u2qfxtb9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/">macOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/productivity/">productivity</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/29/Take-the-Full-Control-of-Floaded-Screen-in-Mac-OS-Terminal/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Take the Full Control of Flooded Screen in iTerm2</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
